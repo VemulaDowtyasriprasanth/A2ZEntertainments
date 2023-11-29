@@ -1,0 +1,137 @@
+.content-section {
+    display: none;
+}
+
+
+body {
+    /* background-image: url(' gen1.png'); */
+    background-size: cover; /* Ensures the background covers the entire element */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333; /* Improved contrast */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #f4f4f4; /* Hover effect */
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    display: flex; /* Using flexbox for layout */
+    flex-wrap: wrap; /* Allowing items to wrap in smaller screens */
+}
+
+#featured {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adding a subtle shadow for depth */
+}
+
+/* Responsive Design - Media Query */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack navigation items on smaller screens */
+        margin: 10px 0;
+    }
+
+    main {
+        width: 95%; /* Adjusting width for smaller screens */
+    }
+}
+#movies-section {
+    background-image: url('movies.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#music-section {
+    background-image: url('music.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* <img src="games.png" alt="Games"> */
+#tvshows-section {
+    background-image: url('tvshows.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#games-section {
+    transition: opacity 0.3s ease; 
+    background-image: url('games.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#games-section:hover {
+    opacity: 0.7; /* Changes the opacity when hovering */
+}
+
+#games-section ul {
+    list-style: none; /* Removes the default bullet points */
+    padding: 0; /* Removes the default padding */
+}
+
+#games-section ul li {
+    background-color: #333; /* Sets the background color of the list items */
+    color: white; /* Sets the text color */
+    padding: 10px; /* Adds some space around the text */
+    margin-bottom: 10px; /* Adds some space between the list items */
+    border-radius: 5px; /* Rounds the corners of the list items */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center; /* Centers the text */
+}
+
+#games-section ul li a {
+    color: white; /* Sets the link color */
+    text-decoration: none; /* Removes the underline from the links */
+}
+
+#games-section ul li:hover {
+    background-color: #f4f4f4; /* Changes the background color when hovering */
+    color: #333; /* Changes the text color when hovering */
+}
+
+#games-section ul li:hover a {
+    color: #333; /* Changes the link color when hovering */
+}
+
+/* Other styles... */
